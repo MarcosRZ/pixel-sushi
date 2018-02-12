@@ -1,0 +1,14 @@
+type Post {
+  _id: ID!
+  title: String
+  description: String
+  content: String
+  date: Date
+} 
+
+input PostDataModel {
+  title: String
+  description: String
+  content: String
+  date: Date
+}

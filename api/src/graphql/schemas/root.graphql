@@ -1,0 +1,19 @@
+scalar Date
+
+type RootQuery {
+  posts: [Post]
+}
+
+type RootMutation {
+  createPost(post: PostDataModel): CreateResult
+}
+
+type CreateResult {
+  OK: Boolean
+  error: String
+}
+
+schema {
+  query: RootQuery
+  mutation: RootMutation
+}
