@@ -28,6 +28,7 @@
     "nodemon": "^1.14.12"
   },
   "scripts": {
+    "build": "rm -rf .compiled && babel src --out-dir .compiled/src --copy-files",
     "dev": "cross-env NODE_ENV=dev nodemon -e js,graphql,json --exec babel-node src/index.js",
     "start": "node .compiled/src/index.js",
     "compile": "rm -rf .compiled && babel src --out-dir .compiled/src"
